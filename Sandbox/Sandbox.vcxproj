@@ -112,7 +112,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>PIG_PLATFORM_WIN;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)src;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)YyzEngine/src;$(SolutionDir)YyzEngine\vendor\spdlog\include;</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -127,7 +128,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>PIG_PLATFORM_WIN;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)src;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)YyzEngine/src;$(SolutionDir)YyzEngine\vendor\spdlog\include;</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -138,6 +140,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ProjectReference Include="..\YyzEngine.vcxproj">
+      <Project>{927b1787-9c5f-46e1-91ca-4205cbb29c56}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\YyzEngine\YyzEngine.vcxproj">
       <Project>{927b1787-9c5f-46e1-91ca-4205cbb29c56}</Project>
     </ProjectReference>
   </ItemGroup>
